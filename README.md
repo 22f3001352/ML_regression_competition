@@ -11,6 +11,24 @@ This repository contains code and documentation for the Engage2Value Kaggle comp
 - **Objective:** Forecast `purchaseValue` (total spend in a session) using digital touchpoint features
 - **Metric:** `r2_score()` ([scikit-learn docs](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html))
 
+## Repository Contents
+
+- **Model.ipynb**  
+  The main Jupyter Notebook containing data exploration, preprocessing steps, model selection, training, validation, and test prediction code. All core analysis is documented with outputs, plots, and commentary.
+
+- **Train_data.gz**  
+  The compressed training dataset used for building and validating regression models. It includes features and target variable to learn the relationship and train predictive algorithms.
+
+- **test_data.csv**  
+  The test dataset for which the target predictions are required. Models trained on the training data should generate predictions for this file; the true labels are not provided.
+
+- **submission.csv**  
+  The final submission file containing predicted target values for the test set, formatted as required by the competition (usually with columns like `id` and `target`). This is uploaded for scoring on the competition platform.
+
+- **README.md**  
+  This document, providing a summary of the repository contents, model workflow, and usage instructions.
+
+
 ## Dataset Description
 
 ### Key Feature Categories
@@ -32,8 +50,10 @@ This repository contains code and documentation for the Engage2Value Kaggle comp
 
  **Exploratory Data Analysis (EDA):**  
    Analyze session metrics, device features, channels, locations.
+   
  **Feature Engineering:**  
    Prepare the features for regression tasks.
+   
  **Model Building:**  
    - Start with a dummy baseline.
    - Experiment with regression models (Linear Regression, Random Forest, XGBoost, etc).
