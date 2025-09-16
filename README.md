@@ -26,32 +26,25 @@ This repository contains code and documentation for the Engage2Value Kaggle comp
 - **Identifiers:**  
   `userId`, `sessionId`
 
-**Target variable:** `purchaseValue` — total spend per session[attached_file:1].
+**Target variable:** `purchaseValue` — total spend per session
 
 ## Workflow
 
-1. **Fork the repository** and work in your own notebook.
-2. **Name notebook:** `<YourRollNo>-notebook-t22025` (eg: `22f3001352-notebook-t22025`).
-3. **Share notebook** (view access, private) with: `iitmbscs2008p`.
-4. **Exploratory Data Analysis (EDA):**  
+ **Exploratory Data Analysis (EDA):**  
    Analyze session metrics, device features, channels, locations.
-5. **Feature Engineering:**  
+ **Feature Engineering:**  
    Prepare the features for regression tasks.
-6. **Model Building:**  
+ **Model Building:**  
    - Start with a dummy baseline.
    - Experiment with regression models (Linear Regression, Random Forest, XGBoost, etc).
    - Tune and validate models.
-7. **Prediction:**  
+ **Prediction:**  
    Generate predictions for the test set.
-8. **Submission:**  
+ **Submission:**  
    - Submit CSV in Kaggle format:  
      Columns: `id`, `target` (where target = predicted `purchaseValue`)
-9. **Evaluation:**  
+ **Evaluation:**  
    - Ranked using R² Score:
      \[
        R^2 = 1 - \frac{\sum_{i}(y_i - \hat{y}_i)^2}{\sum_{i}(y_i - \bar{y})^2}
      \]
-
-## Usage
-
-1. Clone/download the repository.
